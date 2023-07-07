@@ -1,7 +1,7 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-
 # Kanye West Quotes
+
 #### Skill Assessment
 
 The challenge will contain a few core features most applications have. That includes connecting to an API, basic MVC, exposing an API, and finally tests.
@@ -9,31 +9,36 @@ The challenge will contain a few core features most applications have. That incl
 The API we want you to connect to is https://kanye.rest/
 
 ### The application should have the following features:
-* A web page that shows 5 random Kayne West quotes
-* There should be a button to refresh the quotes
-* There should be a button besides each quote to save it to your favorites
-* A web page that shows your saved favorites
-* There should be a button to delete a quote from your favorites
-* Authentication for these pages should be done with a password
-* Frontend should be done with Vue.js and optionally Inertia.js
-* An API route should be available to fetch a specified number of quotes random Kayne West quotes
-* An API route should be available to fetch your favorites quotes
-* An API route should be available to delete a quote from your favorites
-* All API route should be secured with a token
-* Above features are to be tested with Feature tests
+
+-   A web page that shows 5 random Kayne West quotes
+-   There should be a button to refresh the quotes
+-   There should be a button besides each quote to save it to your favorites
+-   A web page that shows your saved favorites
+-   There should be a button to delete a quote from your favorites
+-   Authentication for these pages should be done with a password
+-   Frontend should be done with Vue.js and optionally Inertia.js
+-   An API route should be available to fetch a specified number of quotes random Kayne West quotes
+-   An API route should be available to fetch your favorites quotes
+-   An API route should be available to delete a quote from your favorites
+-   All API route should be secured with a token
+-   Above features are to be tested with Feature tests
 
 Imagine this app is going to be submitted to Kanye himself, so you implement a new extra feature to really impress him with your creativity and coding skills.
 What would that new killer feature be? Please implement it in the app.
 
 ## Developer
-Name: `<your name>` <br/>
-Email: `<your email>`<br/>
+
+Name: `Shamsabbas Gheewala` <br/>
+Email: `shams@alitainfotech.com`<br/>
 
 ## Instructions (Docker required)
+
 ### DO NOT START A NEW LARAVEL APP, USE THIS BOILERPLATE INSTEAD !!
 
 ### Cloning the repository
+
 1. Create a bare clone of the repository. (This is temporary and will be removed so just do it wherever.)
+
     ```bash
     git clone --bare https://github.com/FmTod/skill-assessment-kanye-west.git
     ```
@@ -50,7 +55,6 @@ Email: `<your email>`<br/>
     cd ..
     rm -rf skill-assessment-kanye-west.git
     ```
-   
 5. You can now clone your repository, where you are going to be working, on your machine (in my case in the code folder).
     ```shell
     cd ~/code
@@ -58,12 +62,15 @@ Email: `<your email>`<br/>
     ```
 
 ### Getting Started
+
 1. Create a copy of the `.env.example` file as `.env`
+
     ```bash
     cp .env.example .env
     ```
 
 2. Install dependencies:
+
     ```shell
     docker run --rm \
         -u "$(id -u):$(id -g)" \
@@ -77,12 +84,10 @@ Email: `<your email>`<br/>
     ```shell
     ./vendor/bin/sail up -d
     ```
-   
 4. Generate a new secret key:
     ```shell
     ./vendor/bin/sail artisan key:generate
     ```
-   
 5. (IMPORTANT) Edit the README.md file and add your name and email.
     ```diff
     - Name: `<your name>` <br/>
@@ -90,7 +95,6 @@ Email: `<your email>`<br/>
     + Name: Jhon Doe <br/>
     + Email: jhondoe@exmaple.com <br/>
     ```
-   
 6. (IMPORTANT) Submit your first commit with just the changes to the README.md file. Must be done before starting the assignment.
     ```shell
     git add README.md
@@ -99,36 +103,43 @@ Email: `<your email>`<br/>
     ```
 
 ### Executing Commands
+
 #### PHP Commands
+
 ```shell
 ./vendor/bin/sail php --version
- 
+
 ./vendor/bin/sail php script.php
 ```
 
 #### Composer Commands
+
 ```shell
 ./vendor/bin/sail composer require laravel/sanctum
 ```
 
 #### Artisan Commands
+
 ```shell
 ./vendor/bin/sail artisan queue:work
 ```
 
 #### Node / NPM Commands
+
 ```shell
 ./vendor/bin/sail node --version
- 
+
 ./vendor/bin/sail npm run dev
 ```
 
 If you wish, you may use Yarn instead of NPM:
+
 ```shell
 ./vendor/bin/sail yarn
 ```
 
 #### Running Tests
+
 ```shell
 ./vendor/bin/sail test
 
