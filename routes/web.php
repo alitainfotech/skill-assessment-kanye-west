@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\kanyeController;
+use App\Http\Controllers\favouritesController;
+use App\Http\Controllers\HomeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Auth::routes();
+
+Route::get('/',[HomeController::class,'show']);
+Route::get('/favourites',[favouritesController::class,'show']);
+Route::get('/quotes',[kanyeController::class,'get_quote']);
+Route::post('/add-to-favourites',[favouritesController::class,'addToFavourites']);
+Route::get('/get-favorites-quotes',[favouritesController::class,'getFavoritesQuotes']);
+Route::delete('/delete-favourite-quote/{id}',[favouritesController::class,'deleteFavoriteQuote']);
+// delete the quote from favourites
