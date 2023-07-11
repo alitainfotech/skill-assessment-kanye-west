@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="card-header">
-                <Link href="/">Quotes</Link>
+                <Link href="/home">home</Link>
                 <Link href="/favourites">Favourites</Link>
             </div>
 
